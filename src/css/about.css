@@ -1,0 +1,110 @@
+/* variables colors */
+@import url('./variables.css');
+/* variables colors */
+.about {
+    color: var(--text-color);
+    display:flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    padding: 40px;
+    height: 100vh;
+    gap: 70px;
+    height: 100%;
+    width: 100%;
+   
+}
+.about .header{
+position: relative;
+font-size: 30px;
+}
+.about .header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    border-bottom: 2px solid var(--el-color-1);
+}
+.about .about-info {
+    line-height:3rem;
+
+}
+.about .main-content {
+    display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:flex-start;
+        flex-wrap: wrap;
+        gap: 100px;
+        width: 100%;
+}
+.about .main-content .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+}
+.about .main-content .information  .specific-data > ul  {
+    font-size:19px;
+    font-weight:bold;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* flex-wrap: wrap; */
+} 
+.about .main-content .information .specific-data ul li {
+border-bottom: 1px solid var(--el-color-1);
+
+}
+.about .main-content .information .btns {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.about .main-content .information .btns .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+         width: 140px;
+        height: 30px;
+        background-color: var(--el-color-1);
+        color: var(--text-color);
+        cursor: pointer;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+.about .main-content .information .btns .btn:hover {
+ color: var(--el-color-1);
+ background-color: var(--text-color)
+
+}
+.about .main-content .skills{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about .main-content .skills  .skill{
+    display: flex;
+    flex-direction: column;
+}
+.about .main-content .skills .skill progress {
+   width: 300px;
+   height: 25px;
+}
+.about .main-content .skills .skill .prog {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.EducationInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+} 

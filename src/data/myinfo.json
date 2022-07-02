@@ -1,0 +1,30 @@
+{
+  "personal": {
+    "name": "Ibrahim Abd El Rahman",
+    "job": "Web develober",
+    "description": "I am glad that you are reading about my CV. My experties is to create and design Website and many more...",
+    "description2": "I am glad that you are reading about my CV. I started studying in the Faculty of Computer Science and I am also learning by myself."
+  },
+  "general": {
+    "email": "ibrahim.abdelrahman.abdelziz@gmail.com",
+    "age": "22",
+    "phone": "01017580143",
+    "degree": "Cs",
+    "university": "October 6 (O6U)",
+    "website": "ibrahamcsis.tk",
+    "birthday": "1/9/2000",
+    "city": "Kafr El-Shekh",
+    "college": "Computer Science & Information System",
+    "gpas": "3.68"
+  },
+  "skills": {
+    "html5": 95,
+    "css3": 90,
+    "js": 85,
+    "nodejs": 90,
+    "reactjs": 90,
+    "sql": 70,
+    "bootstrap": 80,
+    "php": 30
+  }
+}
