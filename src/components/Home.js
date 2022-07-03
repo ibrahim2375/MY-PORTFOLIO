@@ -8,7 +8,7 @@ import img from '../image/profile2.jpg'
 
 // import { Typewriter } from 'react-simple-typewriter';
 function Home() {
-  const { txtcolor, elcolor } = useContext(MainContext);
+  const { txtcolor,  } = useContext(MainContext);
   return (
     <div className="home">
 

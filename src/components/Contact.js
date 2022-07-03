@@ -12,7 +12,7 @@ import Swal from 'sweetalert2'
 import data from '../data/myinfo.json'
 function Contact() {
 
-    const { txtcolor, elcolor } = useContext(MainContext);
+    const { txtcolor,  } = useContext(MainContext);
 
     const contactInfo = [
         { id: 1, icon: <EmailIcon sx={{ color: '#f7740c', fontSize: 30 }} />, method: 'Email', content: data.general.email },

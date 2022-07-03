@@ -5,7 +5,7 @@ import '../css/about.css'
 import CV from '../data/cv.pdf'
 
 function About() {
-    const {txtcolor , elcolor} = useContext(MainContext);
+    const {txtcolor , } = useContext(MainContext);
 
     return (
         <div className="about" style={{ color: txtcolor }}>
