@@ -9,12 +9,13 @@
     padding: 0;
     margin: 0;
     outline: 0;
+    /* color: var(--text-color); */
 }
 /* end of intilixation */
 /* .App {
     
 } */
-.App aside {
+.App .aside {
     background-color: var(--bg-black-3);
     position: fixed;
     top: 0;
@@ -22,6 +23,11 @@
     width: 260px;
     height: 100%;
     z-index: 20;
+     transition: .6s linear;
+     -webkit-transition: .6s linear;
+     -moz-transition: .6s linear;
+     -ms-transition: .6s linear;
+     -o-transition: .6s linear;
 }
 .App main {
     background-color: var(--bg-black-4);
@@ -34,4 +40,53 @@
     min-height: 100vh;
     z-index: 10;
     width: 100%;
+}
+.App .nav-toggle {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: none;
+    z-index: 50;
+     
+}
+@media (max-width:750px) {
+    .App .aside {
+
+            left: -260px;
+
+        }
+        .App main {
+                    
+                    padding-left: 0px;
+              
+                    
+         }
+        .App .nav-toggle {
+                            position: fixed;
+                             display: block;
+                             cursor: pointer;
+            }
+         .show {
+              background-color: var(--bg-black-3);
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 260px;
+              height: 100vh;
+              z-index: 30;
+              transition: .6s  linear;
+              -webkit-transition: .6s  linear;
+              -moz-transition: .6s  linear;
+              -ms-transition: .6s  linear;
+              -o-transition: .6s  linear;
+}
+        
+          .showMain {
+              position: fixed;
+              top: 0;
+              left: 0px;
+        
+          } 
+  
+         
 }

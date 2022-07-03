@@ -74,3 +74,6 @@
 .active {
     color: var(--el-color-1);
 }
+
+@media (max-width:750px) {
+}

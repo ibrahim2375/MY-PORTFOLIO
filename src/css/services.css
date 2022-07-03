@@ -45,3 +45,8 @@
     gap: 20px;
     background-color: var(--bg-black-3);
 }
+@media (max-width:750px) {
+.services .header {
+        font-size: 20px;
+    }
+}

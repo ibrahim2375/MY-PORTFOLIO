@@ -108,3 +108,49 @@ border-bottom: 1px solid var(--el-color-1);
     gap: 100px;
 
 } 
+
+@media (max-width:750px) {
+
+    .about .header {
+        font-size: 20px;
+    }
+
+ 
+    
+
+    .about .about-info {
+        line-height: 2rem;
+
+    }
+
+
+
+    .about .main-content .information .specific-data > ul {
+        
+        gap: 30px;
+        
+    }
+
+.about .main-content .information .specific-data ul li {
+    font-weight: normal;
+    font-size:large;
+
+}
+
+
+
+
+
+  
+
+   
+
+
+
+    .about .main-content .skills .skill progress {
+        width: 280px;
+       
+    }
+
+  
+}
