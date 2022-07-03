@@ -6,12 +6,10 @@ import PersonIcon from '@mui/icons-material/Person';
 import EmailIcon from '@mui/icons-material/Email';
 import BallotIcon from '@mui/icons-material/Ballot';
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
-// import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 //call links 
 import { Link } from "react-router-dom";
 
 function Nav() {
-
 
   return (
 
@@ -19,9 +17,7 @@ function Nav() {
       <div className="logo">
         <span>Ibrahim</span>
       </div>
-      {/* <div className="nav-toggle">
-        <FormatListBulletedIcon sx={{ color: 'white' }}  />
-      </div> */}
+
       <ul className="links">
         <li><HomeIcon sx={{ color: 'white' }} /> <Link to="/" className="link">Home</Link> </li>
         <li><PersonIcon sx={{ color: 'white' }} /> <Link to="/about" className="link">About</Link></li>
