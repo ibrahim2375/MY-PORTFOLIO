@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MainContext } from "../App";
 import '../css/portfolios.css'
 import typingImg from '../image/typing screen.png'
 import portfolioImg from '../image/portfolio screen.png'
 import portfolio2Img from '../image/portfolio2  screen.png'
 function Portfolios() {
+    const { txtcolor,  } = useContext(MainContext);
     const portfolioData = [
         { id: 1, img: typingImg, title: 'Typing Test', link: 'http://scanwebsite.000webhostapp.com/' },
         { id: 2, img: portfolioImg, title: 'Simple Portfolio', link: 'https://ibrahamcsis.tk/' },
@@ -13,7 +15,7 @@ function Portfolios() {
         // { id: 6, img: typingImg, title: 'typing test', link: '' },
     ]
     return (
-        <div className="portfolio">
+        <div className="portfolio" style={{ color: txtcolor }}>
             <div className="portfolio-header">
                 <h1>Portfolio</h1>
             </div>
@@ -23,7 +25,7 @@ function Portfolios() {
                     portfolioData.map(port => {
                         return (
                             <a href={port.link} target="_blank" rel="noreferrer" key={port.id}>
-                                <section>
+                                <section >
                                     <div className="portfolio-title">
                                         <h3 >{port.title}</h3>
                                     </div>

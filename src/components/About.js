@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MainContext } from "../App";
 import data from '../data/myinfo.json'
 import '../css/about.css'
 import CV from '../data/cv.pdf'
-// import EducationInfo from './EducationInfo'
+
 function About() {
+    const {txtcolor , elcolor} = useContext(MainContext);
 
     return (
-        <div className="about">
+        <div className="about" style={{ color: txtcolor }}>
             <div className="header">
                 <h1>About</h1>
+
             </div>
             <div className="about-info">
                 <h3> My name is <span className="headline">{data.personal.name}</span> and I`m a <span className="headline">{data.personal.job}</span></h3>
@@ -36,11 +39,7 @@ function About() {
                 </div>
                 <Skills />
             </div>
-            {/* <div className="EducationInfo">
-                <EducationInfo />
-                <EducationInfo />
-          
-            </div> */}
+
 
         </div>
     )

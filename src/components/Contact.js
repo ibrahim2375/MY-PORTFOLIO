@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { MainContext } from "../App";
 import '../css/contact.css'
 //icons 
 import EmailIcon from '@mui/icons-material/Email';
@@ -11,6 +12,7 @@ import Swal from 'sweetalert2'
 import data from '../data/myinfo.json'
 function Contact() {
 
+    const { txtcolor, elcolor } = useContext(MainContext);
 
     const contactInfo = [
         { id: 1, icon: <EmailIcon sx={{ color: '#f7740c', fontSize: 30 }} />, method: 'Email', content: data.general.email },
@@ -18,7 +20,7 @@ function Contact() {
         { id: 3, icon: <LanguageIcon sx={{ color: '#f7740c', fontSize: 30 }} />, method: 'Website', content: data.general.website },
         { id: 4, icon: <LocationOnIcon sx={{ color: '#f7740c', fontSize: 30 }} />, method: 'City', content: data.general.city }]
     return (
-        <div className="contact">
+        <div className="contact" style={{ color: txtcolor }}>
             <div className="contact-header">
                 <h1>Contact</h1>
             </div>
