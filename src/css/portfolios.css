@@ -34,7 +34,7 @@
 .portfolio .portfolio-sections section {
         cursor: pointer;
         position: relative;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
         width: 350px;
         height: 270px;
         display: flex;
@@ -43,7 +43,6 @@
         align-items: center;
         background-color: var(--bg-black-3);
         overflow: hidden;
-        border: 3px solid var(--bg-black-3);
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;

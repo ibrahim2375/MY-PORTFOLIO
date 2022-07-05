@@ -53,27 +53,32 @@
     gap: 25px;
 }
 .nav .links li {
+        padding:5px 10px;
+        width: 150px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: row;
         gap:10px;
-
+        border-bottom: 0.6px solid var(--text-color-2);
 }
+.nav .links li:hover  {
+ background-color: #1a1a1f;
+}
+.nav .links li:hover  .link {
+   
+    color: white;
+}
+
 .nav .nav-toggle {
     position:absolute;
     left: 290px;
     top: 20px;
     display: none;
-   
-    
 }
 .link {
-    color: var(--text-color);
+    color: var(--el-color-1);
 }
 .active {
     color: var(--el-color-1);
-}
-
-@media (max-width:750px) {
 }
