@@ -4,7 +4,8 @@ import { MainContext } from "../App";
 import '../css/home.css'
 // get data 
 import data from '../data/myinfo.json'
-import img from '../image/profile2.jpg'
+import img from '../image/profile.jpg'
+// import img from '../image/94632c52-6791-45ef-bea6-e7c04c0ed7a4-removebg-preview.png'
 
 // import { Typewriter } from 'react-simple-typewriter';
 function Home() {
