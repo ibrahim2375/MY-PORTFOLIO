@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, createRef } from 'react'
 // components
 import Nav from './components/Nav'
 import Home from './components/Home'
@@ -23,7 +23,7 @@ function App() {
   const [txtcolor, settxtcolor] = useState('white');
   const [elcolor, setelcolor] = useState('');
   const [darkThemeNav, setdarkThemeNav] = useState('darkThemeNav');
-
+  const asideRef = createRef();
   const changeTheme = () => {
     if (changeColor === 'darkTheme') {
       setchangeColor('lightTheme');
@@ -55,13 +55,19 @@ function App() {
         setshow('aside');
       }
     })
+    // clicking out navbar
+    asideRef.current.addEventListener("mouseleave", (e) => {
+      if (window.innerWidth < 750) {
+        setshow('aside');
+      }
+    })
     //
-  }, [])
+  })
   return (
     <MainContext.Provider value={{ txtcolor, elcolor }}>
       <Router>
         <div className="App">
-          <aside className={`${show} ${darkThemeNav}`}>
+          <aside className={`${show} ${darkThemeNav}`} ref={asideRef}>
             <Nav />
           </aside>
           <div className="nav-toggle">

@@ -80,6 +80,8 @@
  
 }
 .inputs-info form  .input{
+outline: 0;
+border: none;
  padding-left:10px;
  width: 100%;
  height:40px;
@@ -90,6 +92,8 @@
  -o-border-radius: 10px;
 }
 .inputs-info form textarea {
+    outline: 0;
+    border: none;
     padding-left: 10px;
     width: 100%;
     height: 80px;
@@ -100,7 +104,8 @@
     -o-border-radius: 10px;
 }
 .btn {
-      
+        outline: 0;
+        border: none;
         width: 150px;
         height: 40px;
         background-color: var(--el-color-1);

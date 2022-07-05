@@ -69,9 +69,13 @@ background-color: var(--bg-black-3);
 .them-icon {
     position: absolute;
     top: 50px;
-    right: 0px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
     z-index: 100;
-    
+    cursor: pointer;
+   
+   
 }
 .icon-change-color {
     animation: loop 1s linear infinite;
@@ -112,7 +116,7 @@ transform: rotate(360deg);
                              cursor: pointer;
             }
          .show {
-              background-color: var(--bg-black-3);
+              /* background-color: var(--bg-black-3); */
               position: fixed;
               top: 0;
               left: 0;
@@ -135,7 +139,7 @@ transform: rotate(360deg);
   
           .them-icon {
               position: absolute;
-              top: 15px;
-              right: 0px;
+              top: 10px;
+              right: 5px;
           }
 }
