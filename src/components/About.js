@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { MainContext } from "../App";
 import data from '../data/myinfo.json'
 import '../css/about.css'
-import CV from '../data/cv.pdf'
+import CV from '../data/cv1.pdf'
 
 function About() {
     const {txtcolor , } = useContext(MainContext);

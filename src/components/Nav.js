@@ -19,11 +19,11 @@ function Nav() {
         <span style={{ color: txtcolor }}>Ibrahim</span>
       </div>
       <ul className="links">
-        <li ><HomeIcon sx={{ color: '#f7740c' }} /> <Link to="/" className="link"  >Home</Link> </li>
-        <li><PersonIcon sx={{ color: '#f7740c' }} /> <Link to="/about" className="link"  >About</Link></li>
-        <li><BallotIcon sx={{ color: '#f7740c' }} /><Link to="/services" className="link" >Services</Link></li>
-        <li><HomeRepairServiceIcon sx={{ color: '#f7740c' }} /><Link to="/portfolio" className="link" >Portfolio</Link></li>
-        <li><EmailIcon sx={{ color: '#f7740c' }} /> <Link to="/contact" className="link" >Contact</Link></li>
+        <li > <Link to="/" className="link"  ><HomeIcon sx={{ color: '#f7740c' }} /> Home </Link> </li>
+        <li> <Link to="/about" className="link"  > <PersonIcon sx={{ color: '#f7740c' }} /> About </Link></li>
+        <li><Link to="/services" className="link" ><BallotIcon sx={{ color: '#f7740c' }} /> Services </Link></li>
+        <li><Link to="/portfolio" className="link" ><HomeRepairServiceIcon sx={{ color: '#f7740c' }} /> Portfolio</Link></li>
+        <li> <Link to="/contact" className="link" ><EmailIcon sx={{ color: '#f7740c' }} /> Contact</Link></li>
       </ul>
     </div>
 

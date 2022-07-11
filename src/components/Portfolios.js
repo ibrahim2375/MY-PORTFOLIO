@@ -4,10 +4,10 @@ import '../css/portfolios.css'
 import typingImg from '../image/typing screen.png'
 import portfolioImg from '../image/portfolio screen.png'
 function Portfolios() {
-    const { txtcolor,  } = useContext(MainContext);
+    const { txtcolor, } = useContext(MainContext);
     const portfolioData = [
         { id: 1, img: typingImg, title: 'Typing Test', link: 'http://scanwebsite.000webhostapp.com/' },
-        { id: 2, img: portfolioImg, title: 'Simple Portfolio', link: 'https://ibrahamcsis.tk/' },
+        { id: 2, img: portfolioImg, title: 'Simple Portfolio', link: 'https://ibrahim-csis.000webhostapp.com/' },
         // { id: 4, img: typingImg, title: 'typing test', link: '' },
         // { id: 5, img: typingImg, title: 'typing test', link: '' },
         // { id: 6, img: typingImg, title: 'typing test', link: '' },
