@@ -117,6 +117,10 @@ border: none;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
 }
+.btn:hover {
+    color: var(--el-color-1);
+    background-color: var(--text-color)
+}
 @media (max-width:750px) {
 
 .contact .contact-header {
