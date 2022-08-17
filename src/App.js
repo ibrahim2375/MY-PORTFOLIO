@@ -8,15 +8,11 @@ import Portfolio from './components/Portfolios'
 import Contact from './components/Contact'
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import Theme from './components/Theme'
-
 // components
 import './css/App.css'
 // Call Router 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
 export const MainContext = React.createContext();
-
 function App() {
   const [show, setshow] = useState('aside');
   const [changeColor, setchangeColor] = useState('darkTheme');
@@ -30,22 +26,18 @@ function App() {
       settxtcolor('black');
       setdarkThemeNav('lightThemeNav');
       setelcolor('#e8dfec');
-
     } else {
       setchangeColor('darkTheme');
       settxtcolor('white');
       setdarkThemeNav('darkThemeNav');
       setelcolor('');
-
     }
   }
   const toggle = () => {
     if (show === 'aside') {
       setshow('show');
-
     } else {
       setshow('aside');
-
     }
   }
   useEffect(() => {
