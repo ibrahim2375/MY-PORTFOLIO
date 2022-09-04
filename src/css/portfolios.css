@@ -31,12 +31,16 @@
     flex-wrap: wrap;
     
 }
+.portfolio .portfolio-sections a {
+       width: 45%;
+       /* height: 300px; */
+}
 .portfolio .portfolio-sections section {
         cursor: pointer;
         position: relative;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-        width: 350px;
-        height: 270px;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -50,12 +54,12 @@
         -o-border-radius: 5px;
 }
 .portfolio .portfolio-sections section img {
-width: 100%;
-height: 100%;
-object-fit:cover;
+        width: 100%;
+        height: 100%;
+        object-fit:contain;
 
 }
-.portfolio .portfolio-sections section .portfolio-title {
+.portfolio .portfolio-sections section .portfolio-data {
      color: var(--el-color-1);
      position: absolute;
      top: -150%;
@@ -63,19 +67,28 @@ object-fit:cover;
      height: 100%;
      background-color:rgba(0, 0, 0, 0.6);
      display: flex;
+     flex-direction: column;
      justify-content: center;
      align-items: center;
-     transition: .7s  linear;
-     -webkit-transition: .7s  linear;
-     -moz-transition: .7s  linear;
-     -ms-transition: .7s  linear;
-     -o-transition: .7s  linear;
+     transition: .5s  linear;
+     -webkit-transition: .5s  linear;
+     -moz-transition: .5s  linear;
+     -ms-transition: .5s  linear;
+     -o-transition: .5s  linear;
 }
-.portfolio .portfolio-sections section:hover > .portfolio-title{
+.portfolio .portfolio-sections section .portfolio-data .description {
+    color: white;
+
+}
+.portfolio .portfolio-sections section:hover > .portfolio-data{
    top: 0%;
 }
+@media (max-width:992px) {
+    .portfolio .portfolio-sections a {
+        width: 100%;
+    }
+}
 @media (max-width:750px) {
-
 .portfolio .portfolio-header {
         font-size: 20px;
     }

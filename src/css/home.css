@@ -51,9 +51,14 @@
     border-right: 5px solid var(--el-color-1);
 }
 .home .img  > img {
-object-fit: cover;
-    max-width: 280px;
-    max-height: 280px;
+    object-fit: contain;
+    width: 280px;
+    height: 280px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
 }
 .home .info .btn {
         display: flex;
